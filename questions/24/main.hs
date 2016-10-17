@@ -1,6 +1,8 @@
 module Main where
 
 doubleCheck:: Int -> Int -> Bool
+doubleCheck 5 _ = False
+doubleCheck _ 5 = False
 doubleCheck a b = 
     sameRow && (abs $ac-bc) == 1 ||
     sameColumn && (abs $ar-br) == 1
@@ -12,4 +14,4 @@ doubleCheck a b =
         sameRow = ar == br
         sameColumn = ac == bc
 
-main = putStrLn $ show $ doubleCheck 1 4
+main = putStrLn $ show $ doubleCheck 1 9
