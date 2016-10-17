@@ -1,6 +1,5 @@
 module Main where
 
-l = [1..9]
 doubleCheck:: Int -> Int -> Bool
 doubleCheck a b = 
     sameRow && (abs $ac-bc) == 1 ||
